@@ -2,7 +2,7 @@
 const toggleButton = document.getElementById("theme-toggle");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-if (prefersDark) document.documentElement.setAttribute("data-theme", "dark");
+if (prefersDark) document.documentElement.setAttribute("data-theme", "light");
 
 toggleButton.addEventListener("click", () => {
   const currentTheme = document.documentElement.getAttribute("data-theme");
